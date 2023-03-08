@@ -2,7 +2,7 @@
 # simple LLM tool for the Windows clipboard
 # (c) OakMiner RBA 2023
 #
-# OpenAI API Key is taken from the environment variable OPENAI_API_KEY
+# OpenAI API Key: OPENAI_API_KEY
 # Run on terminal setx OPENAI_API_KEY <your key>
 
 import os
@@ -38,8 +38,7 @@ clipboard = Clipboard()
 llm = LLM()
 req = 0
 
-# Watch the clipboard for the trigger string "@@" and if you find it run through GPT 
-# and write the result back to the clipboard
+# Trigger string "@@" and if you find it run through GPT and write the result back to the clipboard
 
 while True:
     txt = clipboard.get()
