@@ -1,10 +1,16 @@
+#
+# simple LLM tool for email listener that reads inbox, parse body of email and reply with ChatGPT Output.
+# (c) OakMiner RBA 2023
+#
+# OpenAI API Key: OPENAI_API_KEY
+# Run on terminal setx OPENAI_API_KEY <your key>
+
 from email.mime.text import MIMEText
 import imaplib
 import email
 import os
 import smtplib
 import openai
-import time
 import time
 from email.header import decode_header
 
